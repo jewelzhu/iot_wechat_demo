@@ -6,6 +6,8 @@
 本demo实现了什么？
 用户可以微信公众号内扫码绑定一个设备，然后通过微信和iot设备进行语音对话。
 
+iot设备端sdk: https://github.com/jewelzhu/iot-edge-c-sdk/blob/master/iothub_client/src/iot_wechat_client.c
+
 微信到设备:
 微信客户端->微信服务器接受并生成url->本demo server->百度云物管理api->iot设备获取url下载播放
 
