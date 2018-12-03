@@ -1,0 +1,7 @@
+CREATE TABLE device_user_bind (
+  id INT AUTO_INCREMENT NOT NULL COMMENT 'id',
+  wechat_user_id VARCHAR(100) NOT NULL DEFAULT '' COMMENT '微信用户openid',
+  device_id VARCHAR(100) NOT NULL DEFAULT '' COMMENT '设备id',
+  bind_time DATETIME NOT NULL DEFAULT 0 COMMENT '绑定时间',
+  PRIMARY KEY(id)
+) ENGINE=INNODB DEFAULT CHARSET=utf8 COMMENT '设备与微信用户绑定关系';
