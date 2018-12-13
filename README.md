@@ -13,3 +13,10 @@ iot设备端sdk: https://github.com/jewelzhu/iot-edge-c-sdk/blob/master/iothub_c
 
 设备到微信：
 iot设备采集语音然后分段mqtt上传->推送kafka->本demo server从kafka收集并聚合语音信息->上传语音到微信服务器->通知微信服务器发送语音给客户端->客户端收到语音
+
+如何使用本demo:
+
+1. 将相应信息填写到application.yml中
+2. 将client.keystore.jks和client.truststore.jks替换成对应的kafka证书
+3. 执行build.sh编译可执行文件
+4. 执行start.sh运行server

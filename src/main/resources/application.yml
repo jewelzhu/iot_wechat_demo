@@ -1,0 +1,52 @@
+server:
+  port: 8001
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    com.baidubce.demo.iot.weixin: DEBUG
+
+wechat:
+  mp:
+    appId: xx 
+    secret: xx
+    token: test
+    aesKey:
+
+local:
+  file:
+    dir: /tmp/
+    keep:
+      mp3: true
+      pcm: true
+
+bce:
+   ak: xx 
+   sk: xxx 
+   iot.dm.endpoint: iotdm.bj.baidubce.com
+
+kafka:
+  device.voice.topic: xxx 
+
+spring:
+  datasource:
+    username: test123
+    password: test123
+    url: jdbc:mysql://xxx/iot_wechat_demo
+    driver-class-name: com.mysql.jdbc.Driver
+  kafka:
+    bootstrap-servers: kafka.bj.baidubce.com:9091
+    consumer:
+      auto-offset-reset: earliest
+      group-id: xxx
+      value-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
+    ssl:
+      keystore-location: client.keystore.jks
+      keystore-password: fsb1r0j8
+      truststore-location: client.truststore.jks
+      truststore-password: kafka
+    properties:
+      security.protocol: SSL
+
+mybatis:
+  type-aliases-package: com.baidubce.demo.iot.weixin.db.mapper
