@@ -42,9 +42,9 @@ spring:
       value-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
     ssl:
       keystore-location: client.keystore.jks
-      keystore-password: fsb1r0j8
+      keystore-password: xxx
       truststore-location: client.truststore.jks
-      truststore-password: kafka
+      truststore-password: xxx
     properties:
       security.protocol: SSL
 
